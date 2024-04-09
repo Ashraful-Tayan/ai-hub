@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Unuverse Hub</title>
+    <!-- daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#fffafa]">
+    <header>
+        <h3 class="text-center text-3xl font-bold my-8">AI Unuverse Hub </h3>
+    </header>
+    <main>
+
+        <!--start of dynamic AI container -->
+        <section>
+            <div id="AI-container" class="grid gap-10 grid-cols-3 justify-items-stretch justify-evenly p-14 ">
+            </div>
+        </section>
+        <!--end of dynamic AI container -->
+
+        <!-- show more btn  -->
+
+        <section>
+            <div class="grid justify-center mb-3">
+                <button class="btn btn-secondary ">Show More</button>
+            </div>
+        </section>
+        <!-- modal section  -->
+
+
+        <dialog id="show_details_modal" class=" w-[1000px] h-[450px] modal-bottom  sm:modal-middle">
+
+            <div class="flex grow  justify-center ">
+                <!-- content1  -->
+                <div class="bg-red-200 w-[500px] h-auto">
+                    <!-- description  -->
+                    <div>
+                        <h3 id="ai-description"></h3>
+
+                    </div>
+                    <!-- pricing  -->
+                    <div id="con1" class="flex grow justify-center ">
+                        <div class="w-40 h-40 m-5 bg-slate-50 rounded-md">
+                            <p id="plan1-name"> </p>
+                            <p id="plan1-price"></p>
+                        </div>
+                        <div class="w-40 h-40 m-5 bg-slate-50 rounded-md">
+                            <p id="plan2-name"> </p>
+                            <p id="plan2-price"></p>
+                        </div>
+                        <div class="w-40 h-40 m-5 bg-slate-50 rounded-lg">
+                            <p id="plan3-name"> </p>
+                            <p id="plan3-price"></p>
+                        </div>
+
+                    </div>
+                    <!-- feature and integration container  -->
+                    <div class="flex grow justify-between ">
+                        <!-- fearure  -->
+                        <div> 
+                            <P class="font-semibold text-xl p-3 text-left">Features</P>
+                            <ul>
+                                <li id="fli1"></li>
+                                <li id="fli2"></li>
+                                <li id="fli3"></li>
+                                
+                            </ul>
+
+                        </div>
+                        <!-- integration -->
+                        <div>
+                            <p class="font-semibold text-xl p-5 text-left">Integration</p>
+                            <ul>
+                                <li id="ili1"></li>
+                                <li id="ili2"></li>
+                                <li id="ili3"></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="logo" class="w-[500px] h-[500px]">
+                    
+                </div>
+            </div>
+
+            <div class="modal-action">
+                <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn">Close</button>
+                </form>
+            </div>
+
+        </dialog>
+    </main>
+    <script src="ai.js"></script>
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
